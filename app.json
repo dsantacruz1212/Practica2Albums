@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "guia4",
+    "slug": "guia4",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "guia4"
+}
