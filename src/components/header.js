@@ -1,12 +1,12 @@
 import { StyleSheet, Text } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer } from '@react-navigation/native'
+import Album from './album';
 
 
 const Stack = createNativeStackNavigator();
 
-const Header = ({ component, activeAlbum }) => {
-    const { title, albumComponent } = activeAlbum;
+const Header = ({ component }) => {
     // return 
     // <>
     //     <Text style={styles.headerStyle}>{title ? title : 'Music UDB'}</Text>
@@ -14,7 +14,9 @@ const Header = ({ component, activeAlbum }) => {
     // </>
     return <NavigationContainer>
         <Stack.Navigator>
-            <Stack.Screen name='Music UDB' options={{headerStyle: styles.headerStyle}} component={component} />
+            <Stack.Screen name='Music UDB' options={{headerStyle: styles.UDBStyle}} component={component} />
+            <Stack.Screen name='Album' options={{headerStyle: styles.headerStyle, title: 'Metal industrial'}} component={Album} />
+
             {/* {activeAlbum ? <Stack.Screen name={title} options={{headerStyle: styles.headerStyle}} component={component} /> : <></>} */}
         </Stack.Navigator>
     </NavigationContainer>
@@ -22,8 +24,17 @@ const Header = ({ component, activeAlbum }) => {
 
 const styles = StyleSheet.create({
     headerStyle: {
-        backgroundColor: '#93c47d', 
-        fontSize: 30
+        backgroundColor: '#3a5c2b', 
+        fontSize: 300,
+        borderBottomLeftRadius: 20,
+        borderBottomRightRadius: 20
+    },
+    UDBStyle: {
+        backgroundColor: '#3a5c2b', 
+        textAlign: 'center',
+        borderBottomLeftRadius: 20,
+        borderBottomRightRadius: 20
+        
     }
 })
 

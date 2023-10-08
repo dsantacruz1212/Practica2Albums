@@ -1,50 +1,413 @@
 [
     {
         "id": 0,
-        "title": "Metal Industrial",
+        "title": "Metal",
         "albums": [
-            {
-                "id": 0,
-                "title": "Mutter",
-                "uri": "data:image/jpeg;base64,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",
-                "songs": []
-            },
-            {
-                "id": 1,
-                "title": "Rosenrot",
-                "uri": "https://a.storyblok.com/f/132420/594fae4192/rosenrot-cover-2005.jpg",
-                "songs": []
-            },
-            {
-                "id": 2,
-                "title": "Rosenrot",
-                "uri": "https://a.storyblok.com/f/132420/594fae4192/rosenrot-cover-2005.jpg",
-                "songs": []
-            },
-            {
-                "id": 3,
-                "title": "Rosenrot",
-                "uri": "https://a.storyblok.com/f/132420/594fae4192/rosenrot-cover-2005.jpg",
-                "songs": []
-            },
-            {
-                "id": 4,
-                "title": "Rosenrot",
-                "uri": "https://a.storyblok.com/f/132420/594fae4192/rosenrot-cover-2005.jpg",
-                "songs": []
-            },
-            {
-                "id": 5,
-                "title": "Rosenrot",
-                "uri": "https://a.storyblok.com/f/132420/594fae4192/rosenrot-cover-2005.jpg",
-                "songs": []
-            },
-            {
-                "id": 6,
-                "title": "Rosenrot",
-                "uri": "https://a.storyblok.com/f/132420/594fae4192/rosenrot-cover-2005.jpg",
-                "songs": []
-            }
-        ]
+                        {
+                            "id": 0,
+                            "title": "Mutter",
+                            "artist": "Rammstein",
+                            "uri": "https://pm1.aminoapps.com/7195/ae9e63839973fd93f29eed67375f76ca2bbf852fr1-980-1000v2_hq.jpg",
+                            "songs":[
+                                        { "songName": "Nebel" },
+                                        { "songName": "Mutter" },
+                                        { "songName": "Zwitter" },
+                                        { "songName": "Ich Will" },
+                                        { "songName": "Rein Raus" },
+                                        { "songName": "Links 2 3 4" },
+                                        { "songName": "Mein Herz brennt" },
+                                        { "songName": "Sonne" },
+                                        { "songName": "Feuer frei!" },
+                                        { "songName": "Spieluhr" },
+                                        { "songName": "Adios" },
+                                        { "songName": "Mutter" }
+                                    ]
+                        },
+                        {
+                            "id": 1,
+                            "title": "Death Magnet",
+                            "artist": "Metallica",
+                            "uri": "https://m.media-amazon.com/images/I/619VGtLZxRL._UF1000,1000_QL80_.jpg",
+                            "songs": [
+                                            { "songName": "That Was Just Your Life" },
+                                            { "songName": "The End of the Line" },
+                                            { "songName": "Broken, Beat & Scarred" },
+                                            { "songName": "he Day That Never Comes" },
+                                            { "songName": "All Nightmare Long" },
+                                            { "songName": "Cyanide" },
+                                            { "songName": "The Unforgiven III" },
+                                            { "songName": "The Judas Kiss" },
+                                            { "songName": "Suicide & Redemption (instrumental)" },
+                                            { "songName": "My Apocalypse" }
+                                    ]
+                        },
+                        {
+                            "id": 2,
+                            "title": "Master of Puppets",
+                            "artist": "Metallica",
+                            "uri": "https://m.media-amazon.com/images/I/61T81lF9meL._UF894,1000_QL80_.jpg",
+                            "songs": [
+                                        { "songName": "Battery" },
+                                        { "songName": "Master of Puppets" },
+                                        { "songName": "The Thing That Should Not Be" },
+                                        { "songName": "Welcome Home (Sanitatium)" },
+                                        { "songName": "Disposable Heroes" },
+                                        { "songName": "Leper Messiah" },
+                                        { "songName": "Orion (Instrumental)" },
+                                        { "songName": "Damage, Inc." }
+                                    ]
+                        },
+                        {
+                            "id": 3,
+                            "title": "Fear Of The Dark",
+                            "artist": "Iron Maiden",
+                            "uri": "https://www.todorock.com/wp-content/uploads/2019/05/fear-of-the-dark-iron-maiden-1200x1200.jpg",
+                            "songs": [
+                        { "songName": "Be Quick or Be Dead" },
+                                { "songName": "From here to Eternity" },
+                                { "songName": "Afraid to Shoot Strangers" },
+                                { "songName": "Fear is the Key" },
+                                { "songName": "Childhood's End" },
+                                { "songName": "Wasting Love" },
+                                { "songName": "The Fugitive" },
+                                { "songName": "Chains of Misery" },
+                                { "songName": "The Apparition" },
+                                { "songName": "Judas be My Guide" },
+                                { "songName": "Weekend Warrior" },
+                                { "songName": "Fear of the Dark" }
+                                    ]
+                        }
+          
+           
+                    ]
+    } ,
+    {
+        "id": 2,
+        "title": "Rock Alternativo",
+        "albums": [
+                        {
+                            "id": 0,
+                            "title": "Mutter",
+                            "artist": "Rammstein",
+                            "uri": "https://pm1.aminoapps.com/7195/ae9e63839973fd93f29eed67375f76ca2bbf852fr1-980-1000v2_hq.jpg",
+                            "songs":[
+                                        { "songName": "Nebel" },
+                                        { "songName": "Mutter" },
+                                        { "songName": "Zwitter" },
+                                        { "songName": "Ich Will" },
+                                        { "songName": "Rein Raus" },
+                                        { "songName": "Links 2 3 4" },
+                                        { "songName": "Mein Herz brennt" },
+                                        { "songName": "Sonne" },
+                                        { "songName": "Feuer frei!" },
+                                        { "songName": "Spieluhr" },
+                                        { "songName": "Adios" },
+                                        { "songName": "Mutter" }
+                                    ]
+                        },
+                        {
+                            "id": 1,
+                            "title": "Death Magnet",
+                            "artist": "Metallica",
+                            "uri": "https://m.media-amazon.com/images/I/619VGtLZxRL._UF1000,1000_QL80_.jpg",
+                            "songs": [
+                                            { "songName": "That Was Just Your Life" },
+                                            { "songName": "The End of the Line" },
+                                            { "songName": "Broken, Beat & Scarred" },
+                                            { "songName": "he Day That Never Comes" },
+                                            { "songName": "All Nightmare Long" },
+                                            { "songName": "Cyanide" },
+                                            { "songName": "The Unforgiven III" },
+                                            { "songName": "The Judas Kiss" },
+                                            { "songName": "Suicide & Redemption (instrumental)" },
+                                            { "songName": "My Apocalypse" }
+                                    ]
+                        },
+                        {
+                            "id": 2,
+                            "title": "Master of Puppets",
+                            "artist": "Metallica",
+                            "uri": "https://m.media-amazon.com/images/I/61T81lF9meL._UF894,1000_QL80_.jpg",
+                            "songs": [
+                                        { "songName": "Battery" },
+                                        { "songName": "Master of Puppets" },
+                                        { "songName": "The Thing That Should Not Be" },
+                                        { "songName": "Welcome Home (Sanitatium)" },
+                                        { "songName": "Disposable Heroes" },
+                                        { "songName": "Leper Messiah" },
+                                        { "songName": "Orion (Instrumental)" },
+                                        { "songName": "Damage, Inc." }
+                                    ]
+                        },
+                        {
+                            "id": 3,
+                            "title": "Fear Of The Dark",
+                            "artist": "Iron Maiden",
+                            "uri": "https://www.todorock.com/wp-content/uploads/2019/05/fear-of-the-dark-iron-maiden-1200x1200.jpg",
+                            "songs": [
+                        { "songName": "Be Quick or Be Dead" },
+                                { "songName": "From here to Eternity" },
+                                { "songName": "Afraid to Shoot Strangers" },
+                                { "songName": "Fear is the Key" },
+                                { "songName": "Childhood's End" },
+                                { "songName": "Wasting Love" },
+                                { "songName": "The Fugitive" },
+                                { "songName": "Chains of Misery" },
+                                { "songName": "The Apparition" },
+                                { "songName": "Judas be My Guide" },
+                                { "songName": "Weekend Warrior" },
+                                { "songName": "Fear of the Dark" }
+                                    ]
+                        }
+          
+           
+                    ]
+    },
+    {
+        "id": 3,
+        "title": "Pop",
+        "albums": [
+                        {
+                            "id": 0,
+                            "title": "Mutter",
+                            "artist": "Rammstein",
+                            "uri": "https://pm1.aminoapps.com/7195/ae9e63839973fd93f29eed67375f76ca2bbf852fr1-980-1000v2_hq.jpg",
+                            "songs":[
+                                        { "songName": "Nebel" },
+                                        { "songName": "Mutter" },
+                                        { "songName": "Zwitter" },
+                                        { "songName": "Ich Will" },
+                                        { "songName": "Rein Raus" },
+                                        { "songName": "Links 2 3 4" },
+                                        { "songName": "Mein Herz brennt" },
+                                        { "songName": "Sonne" },
+                                        { "songName": "Feuer frei!" },
+                                        { "songName": "Spieluhr" },
+                                        { "songName": "Adios" },
+                                        { "songName": "Mutter" }
+                                    ]
+                        },
+                        {
+                            "id": 1,
+                            "title": "Death Magnet",
+                            "artist": "Metallica",
+                            "uri": "https://m.media-amazon.com/images/I/619VGtLZxRL._UF1000,1000_QL80_.jpg",
+                            "songs": [
+                                            { "songName": "That Was Just Your Life" },
+                                            { "songName": "The End of the Line" },
+                                            { "songName": "Broken, Beat & Scarred" },
+                                            { "songName": "he Day That Never Comes" },
+                                            { "songName": "All Nightmare Long" },
+                                            { "songName": "Cyanide" },
+                                            { "songName": "The Unforgiven III" },
+                                            { "songName": "The Judas Kiss" },
+                                            { "songName": "Suicide & Redemption (instrumental)" },
+                                            { "songName": "My Apocalypse" }
+                                    ]
+                        },
+                        {
+                            "id": 2,
+                            "title": "Master of Puppets",
+                            "artist": "Metallica",
+                            "uri": "https://m.media-amazon.com/images/I/61T81lF9meL._UF894,1000_QL80_.jpg",
+                            "songs": [
+                                        { "songName": "Battery" },
+                                        { "songName": "Master of Puppets" },
+                                        { "songName": "The Thing That Should Not Be" },
+                                        { "songName": "Welcome Home (Sanitatium)" },
+                                        { "songName": "Disposable Heroes" },
+                                        { "songName": "Leper Messiah" },
+                                        { "songName": "Orion (Instrumental)" },
+                                        { "songName": "Damage, Inc." }
+                                    ]
+                        },
+                        {
+                            "id": 3,
+                            "title": "Fear Of The Dark",
+                            "artist": "Iron Maiden",
+                            "uri": "https://www.todorock.com/wp-content/uploads/2019/05/fear-of-the-dark-iron-maiden-1200x1200.jpg",
+                            "songs": [
+                        { "songName": "Be Quick or Be Dead" },
+                                { "songName": "From here to Eternity" },
+                                { "songName": "Afraid to Shoot Strangers" },
+                                { "songName": "Fear is the Key" },
+                                { "songName": "Childhood's End" },
+                                { "songName": "Wasting Love" },
+                                { "songName": "The Fugitive" },
+                                { "songName": "Chains of Misery" },
+                                { "songName": "The Apparition" },
+                                { "songName": "Judas be My Guide" },
+                                { "songName": "Weekend Warrior" },
+                                { "songName": "Fear of the Dark" }
+                                    ]
+                        }
+          
+           
+                    ]
+    },
+    {
+        "id": 4,
+        "title": "80s",
+        "albums": [
+                        {
+                            "id": 0,
+                            "title": "Mutter",
+                            "artist": "Rammstein",
+                            "uri": "https://pm1.aminoapps.com/7195/ae9e63839973fd93f29eed67375f76ca2bbf852fr1-980-1000v2_hq.jpg",
+                            "songs":[
+                                        { "songName": "Nebel" },
+                                        { "songName": "Mutter" },
+                                        { "songName": "Zwitter" },
+                                        { "songName": "Ich Will" },
+                                        { "songName": "Rein Raus" },
+                                        { "songName": "Links 2 3 4" },
+                                        { "songName": "Mein Herz brennt" },
+                                        { "songName": "Sonne" },
+                                        { "songName": "Feuer frei!" },
+                                        { "songName": "Spieluhr" },
+                                        { "songName": "Adios" },
+                                        { "songName": "Mutter" }
+                                    ]
+                        },
+                        {
+                            "id": 1,
+                            "title": "Death Magnet",
+                            "artist": "Metallica",
+                            "uri": "https://m.media-amazon.com/images/I/619VGtLZxRL._UF1000,1000_QL80_.jpg",
+                            "songs": [
+                                            { "songName": "That Was Just Your Life" },
+                                            { "songName": "The End of the Line" },
+                                            { "songName": "Broken, Beat & Scarred" },
+                                            { "songName": "he Day That Never Comes" },
+                                            { "songName": "All Nightmare Long" },
+                                            { "songName": "Cyanide" },
+                                            { "songName": "The Unforgiven III" },
+                                            { "songName": "The Judas Kiss" },
+                                            { "songName": "Suicide & Redemption (instrumental)" },
+                                            { "songName": "My Apocalypse" }
+                                    ]
+                        },
+                        {
+                            "id": 2,
+                            "title": "Master of Puppets",
+                            "artist": "Metallica",
+                            "uri": "https://m.media-amazon.com/images/I/61T81lF9meL._UF894,1000_QL80_.jpg",
+                            "songs": [
+                                        { "songName": "Battery" },
+                                        { "songName": "Master of Puppets" },
+                                        { "songName": "The Thing That Should Not Be" },
+                                        { "songName": "Welcome Home (Sanitatium)" },
+                                        { "songName": "Disposable Heroes" },
+                                        { "songName": "Leper Messiah" },
+                                        { "songName": "Orion (Instrumental)" },
+                                        { "songName": "Damage, Inc." }
+                                    ]
+                        },
+                        {
+                            "id": 3,
+                            "title": "Fear Of The Dark",
+                            "artist": "Iron Maiden",
+                            "uri": "https://www.todorock.com/wp-content/uploads/2019/05/fear-of-the-dark-iron-maiden-1200x1200.jpg",
+                            "songs": [
+                        { "songName": "Be Quick or Be Dead" },
+                                { "songName": "From here to Eternity" },
+                                { "songName": "Afraid to Shoot Strangers" },
+                                { "songName": "Fear is the Key" },
+                                { "songName": "Childhood's End" },
+                                { "songName": "Wasting Love" },
+                                { "songName": "The Fugitive" },
+                                { "songName": "Chains of Misery" },
+                                { "songName": "The Apparition" },
+                                { "songName": "Judas be My Guide" },
+                                { "songName": "Weekend Warrior" },
+                                { "songName": "Fear of the Dark" }
+                                    ]
+                        }
+          
+           
+                    ]
+    },
+    {
+        "id": 5,
+        "title": "90s",
+        "albums": [
+                        {
+                            "id": 0,
+                            "title": "Mutter",
+                            "artist": "Rammstein",
+                            "uri": "https://pm1.aminoapps.com/7195/ae9e63839973fd93f29eed67375f76ca2bbf852fr1-980-1000v2_hq.jpg",
+                            "songs":[
+                                        { "songName": "Nebel" },
+                                        { "songName": "Mutter" },
+                                        { "songName": "Zwitter" },
+                                        { "songName": "Ich Will" },
+                                        { "songName": "Rein Raus" },
+                                        { "songName": "Links 2 3 4" },
+                                        { "songName": "Mein Herz brennt" },
+                                        { "songName": "Sonne" },
+                                        { "songName": "Feuer frei!" },
+                                        { "songName": "Spieluhr" },
+                                        { "songName": "Adios" },
+                                        { "songName": "Mutter" }
+                                    ]
+                        },
+                        {
+                            "id": 1,
+                            "title": "Death Magnet",
+                            "artist": "Metallica",
+                            "uri": "https://m.media-amazon.com/images/I/619VGtLZxRL._UF1000,1000_QL80_.jpg",
+                            "songs": [
+                                            { "songName": "That Was Just Your Life" },
+                                            { "songName": "The End of the Line" },
+                                            { "songName": "Broken, Beat & Scarred" },
+                                            { "songName": "he Day That Never Comes" },
+                                            { "songName": "All Nightmare Long" },
+                                            { "songName": "Cyanide" },
+                                            { "songName": "The Unforgiven III" },
+                                            { "songName": "The Judas Kiss" },
+                                            { "songName": "Suicide & Redemption (instrumental)" },
+                                            { "songName": "My Apocalypse" }
+                                    ]
+                        },
+                        {
+                            "id": 2,
+                            "title": "Master of Puppets",
+                            "artist": "Metallica",
+                            "uri": "https://m.media-amazon.com/images/I/61T81lF9meL._UF894,1000_QL80_.jpg",
+                            "songs": [
+                                        { "songName": "Battery" },
+                                        { "songName": "Master of Puppets" },
+                                        { "songName": "The Thing That Should Not Be" },
+                                        { "songName": "Welcome Home (Sanitatium)" },
+                                        { "songName": "Disposable Heroes" },
+                                        { "songName": "Leper Messiah" },
+                                        { "songName": "Orion (Instrumental)" },
+                                        { "songName": "Damage, Inc." }
+                                    ]
+                        },
+                        {
+                            "id": 3,
+                            "title": "Fear Of The Dark",
+                            "artist": "Iron Maiden",
+                            "uri": "https://www.todorock.com/wp-content/uploads/2019/05/fear-of-the-dark-iron-maiden-1200x1200.jpg",
+                            "songs": [
+                        { "songName": "Be Quick or Be Dead" },
+                                { "songName": "From here to Eternity" },
+                                { "songName": "Afraid to Shoot Strangers" },
+                                { "songName": "Fear is the Key" },
+                                { "songName": "Childhood's End" },
+                                { "songName": "Wasting Love" },
+                                { "songName": "The Fugitive" },
+                                { "songName": "Chains of Misery" },
+                                { "songName": "The Apparition" },
+                                { "songName": "Judas be My Guide" },
+                                { "songName": "Weekend Warrior" },
+                                { "songName": "Fear of the Dark" }
+                                    ]
+                        }
+          
+           
+                    ]
     }
+    
 ]
