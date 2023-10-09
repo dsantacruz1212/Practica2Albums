@@ -3,7 +3,7 @@ import { ScrollView, View, StyleSheet, Text, Dimensions, Image, TouchableOpacity
 const Slider = ({ genre, navigation }) => {
     // console.log(genre);
     const { title, albums } = genre;
-    console.log(title);
+    //console.log(title);
     return<>
         
         <Text style={styles.TextGenreStyle}>{title}</Text>

@@ -6,14 +6,14 @@ import genres from '../data/genres.json'
 const MusicUDB = ({navigation}) => {
 
     return (
-        <ScrollView>
-        <View style={styles.container}>
-        {genres.map( current => {
-            const { id } = current;
-            return <Slider key={`genre${id}`} genre={{...current}} navigation={navigation} />
-        } )}
-        <StatusBar style="auto" />
-        </View>
+        <ScrollView snapToInterval={300} style={{backgroundColor: 'black', height: '100%'}} > 
+            <View style={styles.container}>
+                {genres.map( current => {
+                    const { id } = current;
+                    return <Slider key={`genre${id}`} genre={{...current}} navigation={navigation} />
+                } )}
+                <StatusBar style="auto" />
+            </View>
         </ScrollView>
     )
 }
@@ -21,9 +21,7 @@ const MusicUDB = ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
       justifyContent: 'center',
-      backgroundColor: 'black',
       margin: 0
     },
     

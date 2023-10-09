@@ -1,37 +1,45 @@
-import { Text, Image, View, Dimensions, StyleSheet, FlatList } from 'react-native';
+import { Text, Image, View, Dimensions, StyleSheet, FlatList, ScrollView } from 'react-native';
 import { useEffect } from 'react';
 import Song from './song';
-
+import { Divider } from "react-native-elements";
 
 const Album = ({navigation, route}) => {
     const{ params: { albumTitle, uri, artist, songs } } = route;
+    
 
     useEffect(() => {
         navigation.setOptions({ title: albumTitle });
     }, []);
-    console.log(songs);
+    
     return (
         <View style={{
             alignItems: 'center',
             marginTop: 0,
-            backgroundColor: 'black'
+            backgroundColor: 'black',
+            height: '100%'
         }}>
             
             <Image style={{
                 width: Dimensions.get("window").width * 0.50,
                 height: Dimensions.get("window").height *0.25,
-                marginTop: 7
+                marginTop: 20
             }} source={{uri}} />
             <Text style={styles.albumTitle}>{albumTitle}</Text>
             <Text style={styles.albumArtist}>{artist}</Text>
-            <Text style={styles.albumArtist}>----------------------------------</Text>
-          
-            <Song songName={songs[0].songName} artist={artist} />
-            <Song songName={songs[1].songName} artist={artist} />
-            {/* {songs.map((currentSong, index)=> {
+
+            <Divider style={{ backgroundColor: 'white' }} />
+            
+            <ScrollView  vertical style={styles.ScrollviewSongs} snapToAlignment="center" pagingEnabled scrollEnabled >
+                        
+            {songs.map((currentSong, index)=> {
                 const { songName } = currentSong;
-                return <Song key={index} songName={songName} artist={artist} />
-            })} */}
+                return <Song key={index} songName={songName} artist={artist} navigation={navigation} albumInfo={{uri, albumTitle, artist}} />
+                
+            })}
+                            
+            </ScrollView>
+            
+            
         </View>
     )
 }
@@ -45,6 +53,10 @@ const styles = StyleSheet.create({
     albumArtist: {
         fontSize: 15,
         color: 'white'
+    },
+    ScrollviewSongs:{
+        margin: 5
+
     }
 })
 

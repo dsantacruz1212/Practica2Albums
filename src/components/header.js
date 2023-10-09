@@ -2,6 +2,7 @@ import { StyleSheet, Text } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer } from '@react-navigation/native'
 import Album from './album';
+import Player from './player';
 
 
 const Stack = createNativeStackNavigator();
@@ -15,8 +16,8 @@ const Header = ({ component }) => {
     return <NavigationContainer>
         <Stack.Navigator>
             <Stack.Screen name='Music UDB' options={{headerStyle: styles.UDBStyle}} component={component} />
-            <Stack.Screen name='Album' options={{headerStyle: styles.headerStyle, title: 'Metal industrial'}} component={Album} />
-
+            <Stack.Screen name='Album' options={{headerStyle: styles.headerStyle}} component={Album} />
+            <Stack.Screen name='Player' options={{headerStyle: styles.headerStyle}} component={Player} />
             {/* {activeAlbum ? <Stack.Screen name={title} options={{headerStyle: styles.headerStyle}} component={component} /> : <></>} */}
         </Stack.Navigator>
     </NavigationContainer>
